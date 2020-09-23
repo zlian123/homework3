@@ -6,7 +6,7 @@ body{
   background-size: cover ;
   background-image: url('../images/pigeon-background.JPEG');
   background-color:  #DDDDDD;
-  background-repeat: no-repeat; /*Why do we need this?*/
+  background-repeat: no-repeat;
   background-position: center;
 }/*W3c Error: Bad value https:/fonts.googleapis.com/css?family=Andika 
 for attribute href on element link: Expected a slash ("/").*/
@@ -40,7 +40,7 @@ table{
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #000000;
-  border-collapse: collapse; /* Why doesn't this work?*/
+  border-radius: 10px;
 }
 
 .colhead{
@@ -65,17 +65,17 @@ td{
   padding: 10px;
 }
 
-table tr:hover{ /*Why doesn't tr:hover work?*/
-  background-color: rgb(125, 8, 47, 0.25);
-  transition: 1.5s;
-}
-
 tr:nth-child(even){
   background-color: #d1d1d1;
 }
 
 tr:nth-child(odd){
   background-color: transparent;
+}
+
+tr:hover{
+  background-color: rgba(125, 8, 47, 0.25); /*why do we need rgba?*/
+  transition: 1.5s;
 }
 
 * :focus{
@@ -108,5 +108,6 @@ footer{
   color: #FFFFFF;
   position: fixed;
   bottom:0;
+  left:0;
 }
 
