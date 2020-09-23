@@ -74,16 +74,14 @@ tr:nth-child(odd){
 }
 
 tr:hover{
-  background-color: rgba(125, 8, 47, 0.25); /*why do we need rgba?*/
+  background-color: rgba(125, 8, 47, 0.25);
   transition: 1.5s;
 }
 
 * :focus{
-  border: 3px dashed;
-  color: #417243
+  border: 3px dashed #417243;
 }
 
-/* why do we need tr:first-child?*/
 thead tr:first-child th:first-child{
   border-radius: 10px 0 0 0;
 }
