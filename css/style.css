@@ -1,0 +1,112 @@
+body{
+  color: #000000;
+  font-size: 16px;
+  margin: 1.2em;
+  font-family: 'Andika', sans-serif;
+  background-size: cover ;
+  background-image: url('../images/pigeon-background.JPEG');
+  background-color:  #DDDDDD;
+  background-repeat: no-repeat; /*Why do we need this?*/
+  background-position: center;
+}/*W3c Error: Bad value https:/fonts.googleapis.com/css?family=Andika 
+for attribute href on element link: Expected a slash ("/").*/
+
+main{
+  margin-bottom: 100px;
+}
+
+h1{
+  color: #c12258;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+p{
+  padding-top: 15px;
+}
+
+a{
+  font-size: 16px;
+  color: #c12258;
+  text-decoration: wavy underline;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000000;
+  border-collapse: collapse; /* Why doesn't this work?*/
+}
+
+.colhead{
+  background-color: #7e0830;
+  color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+}
+
+.rowhead{
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
+
+}
+
+td{
+  border-top: 2px solid #000000;
+  text-align: center;
+  padding: 10px;
+}
+
+table tr:hover{ /*Why doesn't tr:hover work?*/
+  background-color: rgb(125, 8, 47, 0.25);
+  transition: 1.5s;
+}
+
+tr:nth-child(even){
+  background-color: #d1d1d1;
+}
+
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
+* :focus{
+  border: 3px dashed;
+  color: #417243
+}
+
+/* why do we need tr:first-child?*/
+thead tr:first-child th:first-child{
+  border-radius: 10px 0 0 0;
+}
+
+thead tr:first-child th:last-child{
+  border-radius: 0 10px 0 0;
+}
+
+tbody tr:last-child th:first-child{
+  border-radius: 0 0 0 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-radius: 0 0 10px 0;
+}
+
+footer{
+  min-height: 75px;
+  width:100%;
+  background:#000000;
+  text-align:center;
+  color: #FFFFFF;
+  position: fixed;
+  bottom:0;
+}
+
