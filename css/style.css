@@ -32,7 +32,7 @@ p{
 
 a{
   font-size: 16px;
-  color: #c12258;
+  color: #B92751;
   text-decoration: wavy underline;
 }
 
@@ -74,8 +74,8 @@ tr:nth-child(odd){
 }
 
 tr:hover{
-  background-color: rgba(125, 8, 47, 0.25);
-  transition: 1.5s;
+  background-color: rgba(126, 8, 32, 0.25);
+  /*transition: 1.5s;*/
 }
 
 * :focus{
